@@ -101,66 +101,72 @@ const CommunityProjects = () => {
         ))}
       </div>
 
-      <div className="flex items-center justify-center mt-20 text-xl p-10">
-        {/* Left section: Step-by-step instructions */}
-        <div className="w-1/2">
-        <h2 class="text-3xl font-bold tracking-tight mb-6">How it works</h2>
-          <div className="space-y-6">
-            {/* Step 1: Find a project */}
-            <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-black text-white flex items-center justify-center rounded-full font-bold">
-                1
-              </div>
-              <div>
-                <h3 className="font-bold mb-1">Find a project</h3>
-                <p className="text-gray-500">
-                  Browse through hundreds of local projects that need your help.
-                </p>
-              </div>
-            </div>
+      
 
-            {/* Step 2: Volunteer your skills */}
-            <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-black text-white flex items-center justify-center rounded-full font-bold">
-                2
-              </div>
-              <div>
-                <h3 className="font-bold">Volunteer your skills</h3>
-                <p className="text-gray-500">
-                  Sign up to contribute your time, skills, or resources to
-                  projects you care about.
-                </p>
-              </div>
-            </div>
 
-            {/* Step 3: Make an impact */}
-            <div className="flex items-start gap-3">
-              <div className="w-8 h-8 bg-black text-white flex items-center justify-center rounded-full font-bold">
-                3
-              </div>
-              <div>
-                <h3 className="font-bold">Make an impact</h3>
-                <p className="text-gray-500">
-                  Work together with organizations and other volunteers to
-                  create positive change.
-                </p>
-              </div>
+    <div className="flex items-center justify-center mt-20 text-xl p-10">
+      {/* Left Section - Step Instructions */}
+      <div className="w-1/2">
+        <h2 className="text-3xl font-bold tracking-tight mb-6">How it works</h2>
+        <div className="space-y-6">
+          {/* Step 1 */}
+          <div className="flex items-center gap-x-6">
+            <div className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full font-bold">
+              1
+            </div>
+            <div>
+              <h3 className="font-bold text-lg">Find a project</h3>
+              <p className="text-gray-500">
+                Browse through hundreds of local projects that need your help.
+              </p>
             </div>
           </div>
 
-          {/* Get Started Button - CTA to engage users */}
-          <button className="bg-black text-white px-6 py-2 rounded-lg mt-6">
-            Get Started
-          </button>
-        </div>
+          {/* Step 2 */}
+          <div className="flex items-center gap-x-6">
+            <div className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full font-bold">
+              2
+            </div>
+            <div>
+              <h3 className="font-bold text-lg">Volunteer your skills</h3>
+              <p className="text-gray-500">
+                Sign up to contribute your time, skills, or resources to projects you care about.
+              </p>
+            </div>
+          </div>
 
-        {/* Right section: Placeholder for an image or illustration */}
-        <div className="w-1/2 flex items-center justify-center">
-          <div className="w-96 h-96 bg-gray-200 flex items-center justify-center rounded-lg">
-            <span className="text-gray-400">[Image Placeholder]</span>
+          {/* Step 3 */}
+          <div className="flex items-center gap-x-6">
+            <div className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full font-bold">
+              3
+            </div>
+            <div>
+              <h3 className="font-bold text-lg">Make an impact</h3>
+              <p className="text-gray-500">
+                Work together with organizations and other volunteers to create positive change.
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* CTA Button */}
+        <button className="bg-black text-white px-6 py-2 rounded-lg mt-6 hover:bg-gray-800 transition">
+          Get Started
+        </button>
       </div>
+
+      {/* Right Section - Image Placeholder */}
+      {/* Right Section - Image */}
+<div className="w-1/2 flex items-center justify-center">
+  <img 
+    src="data:image/png;base64,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" 
+    alt="Volunteering Image" 
+    className="w-96 h-96 object-cover rounded-lg"
+  />
+</div>
+
+    </div>
+  
 
       <div className="flex flex-col items-center justify-center text-center mt-10">
   {/* Title */}

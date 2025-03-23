@@ -1,5 +1,5 @@
 import React from "react";
-import { Twitter, Facebook, Instagram, Linkedin, Link } from "lucide-react";
+import { Link } from "react-router";
 
 export default function Footer() {
   return (
@@ -21,8 +21,7 @@ export default function Footer() {
               <li><p className="text-muted-foreground">Projects</p></li>
               <li><p className="text-muted-foreground">Organizations</p></li>
               <li><p className="text-muted-foreground">Volunteers</p></li>
-              <li><p className="text-muted-foreground">Map</p></li>
-              <li><p className="text-muted-foreground">Impact</p></li>
+             
             </ul>
           </div>
 
@@ -33,9 +32,9 @@ export default function Footer() {
               About Us
             </Link>
             <ul className="space-y-2">
-              <li>acb</li>
-              <li><p className="text-muted-foreground">Contact</p></li>
-              <li><p className="text-muted-foreground">Careers</p></li>
+
+              <li><Link to={"/contact"} className="text-muted-foreground">Contact</Link></li>
+             
             </ul>
           </div>
 
@@ -43,9 +42,9 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><p className="text-muted-foreground">Terms of Service</p></li>
-              <li><p className="text-muted-foreground">Privacy Policy</p></li>
-              <li><p className="text-muted-foreground">Cookie Policy</p></li>
+              <li><Link to={"/terms"} className="text-muted-foreground">Terms of Service</Link></li>
+              <li><Link to={"/privacy"} className="text-muted-foreground">Privacy Policy</Link></li>
+              <li><Link to={"/cookies"} className="text-muted-foreground">Cookie Policy</Link></li>
             </ul>
           </div>
         </div>

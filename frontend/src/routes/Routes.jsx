@@ -11,6 +11,7 @@ import TermsOfService from "../pages/terms";
 import PrivacyPolicy from "../pages/privacy";
 import { Cookie } from "lucide-react";
 import CookiesPolicy from "../pages/cookies";
+import ContactUs from "../pages/contact";
 
 // Lazy-loaded components for better performance
 const Login = lazy(() => import("../pages/forms/Login"));
@@ -65,6 +66,13 @@ const AppRoutes = () => {
                         <>
                             <Navbar />
                             <CookiesPolicy />
+                            <Footer />
+                        </>
+                    } />
+                     <Route path="/contact" element={
+                        <>
+                            <Navbar />
+                            <ContactUs />
                             <Footer />
                         </>
                     } />
