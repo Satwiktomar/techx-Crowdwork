@@ -11,6 +11,7 @@ import TermsOfService from "../pages/terms";
 import PrivacyPolicy from "../pages/privacy";
 import { Cookie } from "lucide-react";
 import CookiesPolicy from "../pages/cookies";
+import SignVolunteer from "../pages/forms/SignVolunteer";
 import ContactUs from "../pages/contact";
 
 // Lazy-loaded components for better performance
@@ -48,21 +49,21 @@ const AppRoutes = () => {
                             <Footer />
                         </>
                     } />
-                       <Route path="/Terms" element={
+                    <Route path="/Terms" element={
                         <>
                             <Navbar />
                             <TermsOfService />
                             <Footer />
                         </>
                     } />
-                         <Route path="/privacy" element={
+                    <Route path="/privacy" element={
                         <>
                             <Navbar />
                             <PrivacyPolicy />
                             <Footer />
                         </>
                     } />
-                     <Route path="/cookies" element={
+                    <Route path="/cookies" element={
                         <>
                             <Navbar />
                             <CookiesPolicy />
@@ -96,6 +97,15 @@ const AppRoutes = () => {
                             <ProtectedRoute>
                                 <Navbar />
                                 <IssuePage />
+                            </ProtectedRoute>
+                        </>
+                    } />
+
+                    <Route path="/signVolunteer" element={
+                        <>
+                            <ProtectedRoute>
+                                <Navbar />
+                                <SignVolunteer />
                             </ProtectedRoute>
                         </>
                     } />

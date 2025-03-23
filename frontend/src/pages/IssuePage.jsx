@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const IssuePage = () => {
     const location = useLocation();
@@ -41,7 +42,7 @@ const IssuePage = () => {
             <div className="mt-6 bg-gray-100 p-4 rounded-md">
                 <h2 className="text-xl font-semibold">Volunteer for this Issue</h2>
                 <p className="text-gray-600">Join others who are working to resolve this issue.</p>
-                <button className="mt-3 px-6 py-2 bg-black text-white rounded-md hover:bg-gray-900 hover:cursor-pointer">
+                <button onClick={() => { navigate("/signVolunteer", { replace: true }) }} className="mt-3 px-6 py-2 bg-black text-white rounded-md hover:bg-gray-900 hover:cursor-pointer">
                     Sign Up to Volunteer
                 </button>
             </div>

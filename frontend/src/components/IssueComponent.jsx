@@ -20,7 +20,7 @@ const IssueComponent = ({ issue }) => {
                     </div>
                     <p className="text-gray-600 ">{issue.desc}</p>
                 </div>
-                <div className="h-full flex flex-col gap-2">
+                <div className="h-full flex flex-col gap-2 min-w-fit">
                     <h2 className="text-sm bg-gray-200 text-gray-600 px-2 py-1 rounded-full">{issue.pin}</h2>
                     <h2 className="text-sm bg-gray-200 text-gray-600 px-2 py-1 rounded-full">{issue.status}</h2>
                 </div>
